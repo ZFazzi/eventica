@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/index.css">
     <title>Eventica</title>
 </head>
@@ -13,17 +15,26 @@
     <header>
         <div class="header">
             <div class="header-logo">
-                <a href="../index.html"><img src="images/Eventica-logo (2).png" alt="Jamz-Logo" title="Jamz-Logo" /></a>
+                <a href="index.html"><img src="images/Eventica-logo.png" alt="Jamz-Logo" title="Eventica-logo" /></a>
             </div>
             <!-- Navbar Start -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/about.html">About us</a></li>
-                    <li><a href="../pages/gallery.html">Gallery</a></li>
-                    <li><a href="../pages/contact.html">Contact us</a></li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#">Venues</a>
+                <a href="#">Catering&Food Services</a>
+                <a href="#">Beauty</a>
+                <a href="#">Decor&Setup</a>
+                <a href="#">Photography&Videography</a>
+                <a href="#">Transportation</a>
+                <a href="#">Children’s services</a>
+                <a href="#">Entertainment</a>
+                <a href="#">Other</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <!-- Hamburger Icon for mobile -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
             <!-- Navbar End -->
             <div class="button">
                 <button class="sign-in">Sign-in</button>
@@ -34,5 +45,15 @@
     <main>
         <h1>Eventica</h1>
     </main>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 </body>
 </html>
